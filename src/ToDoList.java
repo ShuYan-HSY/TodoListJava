@@ -19,11 +19,13 @@ public class ToDoList {
 		Task task = null;
 		if ((task = tasks.get(description)) != null){
 			return task.isComplete();
-		};
+		}else {
 		return false;
+		}
 	}
 	public Task getTask(String description) {
-		return tasks.get(description);
+	
+			return tasks.get(description);	
 	}
 	public Task removeTask(String description) {
 		return tasks.remove(description);
