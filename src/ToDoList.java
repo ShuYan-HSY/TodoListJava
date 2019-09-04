@@ -17,6 +17,13 @@ public class ToDoList {
 		}
 		;
 	}
+	
+	public void updateTaskStatus(boolean status, String description) {
+		Task task = null;
+		if ((task = tasks.get(description)) != null) {
+			task.setComplete(status);
+		}
+	}
 
 	public boolean getStatus(String description) {
 		Task task = null;
