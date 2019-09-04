@@ -49,4 +49,12 @@ public class ToDoList {
 				completedTasks.add(task);
 		return completedTasks;
 	}
+	
+	public void editTask(String description, Task newTask) {
+		Task task = null;
+		if ((task = tasks.get(description)) != null){
+			tasks.remove(description);
+			addTask(newTask);
+		}
+	}
 }

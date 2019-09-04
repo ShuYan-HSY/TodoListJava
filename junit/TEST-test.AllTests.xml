@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ToDoListTest" project="TodoList" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="ToDoListTest" time="0.0" uniqueid="[engine:junit-vintage]/[runner:ToDoListTest]">
+    <testcase name="testEditTask" classname="ToDoListTest" time="0.0" displayname="testEditTask" uniqueid="[engine:junit-vintage]/[runner:ToDoListTest]/[test:testEditTask(ToDoListTest)]"/>
+    <testcase name="testAddTask" classname="ToDoListTest" time="0.0" displayname="testAddTask" uniqueid="[engine:junit-vintage]/[runner:ToDoListTest]/[test:testAddTask(ToDoListTest)]"/>
+    <testcase name="testGetCompletedTasks" classname="ToDoListTest" time="0.0" displayname="testGetCompletedTasks" uniqueid="[engine:junit-vintage]/[runner:ToDoListTest]/[test:testGetCompletedTasks(ToDoListTest)]"/>
+    <testcase name="testgetStatus" classname="ToDoListTest" time="0.0" displayname="testgetStatus" uniqueid="[engine:junit-vintage]/[runner:ToDoListTest]/[test:testgetStatus(ToDoListTest)]"/>
+    <testcase name="testGetTask" classname="ToDoListTest" time="0.0" displayname="testGetTask" uniqueid="[engine:junit-vintage]/[runner:ToDoListTest]/[test:testGetTask(ToDoListTest)]"/>
+    <testcase name="testRemoveTask" classname="ToDoListTest" time="0.0" displayname="testRemoveTask" uniqueid="[engine:junit-vintage]/[runner:ToDoListTest]/[test:testRemoveTask(ToDoListTest)]"/>
+  </testsuite>
+</testrun>
