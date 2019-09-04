@@ -58,9 +58,10 @@ public class ToDoListTest extends TestCase{
 	public void testRemoveTask() {
 		assertNotNull(todoList);
 		todoList.addTask(task1);
-		todoList.addTask(task2);;
-		
+		todoList.addTask(task2);
+		assertEquals(2, todoList.getAllTasks().size());
 		todoList.removeTask(task1.getDescription());
+		assertEquals(1, todoList.getAllTasks().size());
 		assertNull(todoList.getTask(task1.getDescription()));	
 	}
 	@Test
