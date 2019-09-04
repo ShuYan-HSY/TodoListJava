@@ -99,5 +99,6 @@ public class ToDoListTest extends TestCase{
 		Task task = todoList.getTask("desc 1");
 		assertNotNull(task);
 		assertTrue("task priority is not equal to 0", task.getPriority() != 0);
+		assertEquals(1, task.getPriority());
 	}
 }
