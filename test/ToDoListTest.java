@@ -69,4 +69,13 @@ public class ToDoListTest extends TestCase{
 		Collection<Task> tasks = todoList.getCompletedTasks();
 		assertEquals(2, tasks.size());
 	}
+	@Test
+	public void testEditTask() {
+		assertNotNull(todoList);
+		todoList.addTask(task1);
+		assertEquals(task1, todoList.getTask(task1.getDescription()));
+		todoList.editTask(task1.getDescription(),task2);
+		Task updatedTask = todoList.getTask(task2.getDescription());
+		assertSame(task2, updatedTask);
+	}
 }

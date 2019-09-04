@@ -39,4 +39,12 @@ public class ToDoList {
 			if (task.isComplete() == true) completedTasks.add(task);
 		return completedTasks;
 	}
+	
+	public void editTask(String description, Task newTask) {
+		Task task = null;
+		if ((task = tasks.get(description)) != null){
+			tasks.remove(description);
+			addTask(newTask);
+		}
+	}
 }
