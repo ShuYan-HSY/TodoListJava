@@ -22,19 +22,14 @@ public class ToDoList {
 		Task task = null;
 		if ((task = tasks.get(description)) != null) {
 			return task.isComplete();
-<<<<<<< HEAD
-		}
-		;
-=======
-		}else {
->>>>>>> 335577f3ba630c2aba27a72a086020f7ca74e77a
-		return false;
+		} else {
+			return false;
 		}
 	}
 
 	public Task getTask(String description) {
-	
-			return tasks.get(description);	
+
+		return tasks.get(description);
 	}
 
 	public Task removeTask(String description) {
