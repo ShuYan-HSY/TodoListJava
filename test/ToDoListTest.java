@@ -39,7 +39,12 @@ public class ToDoListTest extends TestCase{
 		assertNotNull(todoList);
 		todoList.addTask(task1);
 		assertEquals(1, todoList.getAllTasks().size());
-		assertEquals(task1, todoList.getTask(task1.getDescription()));
+		Task temp1 = todoList.getTask(task1.getDescription());
+		assertEquals(temp1, task1);
+		todoList.addTask(task2);
+		assertEquals(2, todoList.getAllTasks().size());
+		Task temp2 = todoList.getTask(task2.getDescription());
+		assertEquals(temp2, task2);
 	}
 	@Test
 	public void testgetStatus() {
